@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+
+  <h1>Demostración de Output en Javascript</h1>
+
+  <button onclick="mostrarAlerta()">Mostrar alerta</button>
+
+  <br><br>
+
+  <p id="parrafo"></p>
+  <button onclick="cambiarTexto()">Cambiar texto</button>
+
+  <script>
+    console.log("La página se ha cargado correctamente");
+
+    function mostrarAlerta() {
+      alert("Rodrigo Zúñiga Solórzano"); 
+    }
+
+    function cambiarTexto() {
+      document.getElementById("parrafo").textContent =
+        "¡Texto actualizado con Javascript!";
+    }
+  </script>
+
+</body>
+</html>
